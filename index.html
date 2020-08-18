@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <script type="text/javascript" src="https://bam.nr-data.net/1/f9a3d2f3bb?a=124493846&amp;v=1169.7b094c0&amp;to=ewpdREVWCVkDRUpOV1pKQ1FQXBYaDlgIXA%3D%3D&amp;rst=1016&amp;ck=1&amp;ref=https://flowr.is/&amp;ap=9&amp;be=487&amp;fe=986&amp;dc=592&amp;perf=%7B%22timing%22:%7B%22of%22:1593481491302,%22n%22:0,%22u%22:414,%22ue%22:414,%22f%22:2,%22dn%22:13,%22dne%22:213,%22c%22:213,%22s%22:259,%22ce%22:309,%22rq%22:310,%22rp%22:392,%22rpe%22:423,%22dl%22:420,%22di%22:592,%22ds%22:592,%22de%22:593,%22dc%22:986,%22l%22:986,%22le%22:1002%7D,%22navigation%22:%7B%22ty%22:1%7D%7D&amp;jsonp=NREUM.setToken"></script>
+  <script src="https://js-agent.newrelic.com/nr-1169.min.js"></script>
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script src="https://www.googletagmanager.com/gtag/js?id=UA-127225293-2" async="async"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-127225293-2');
+  </script>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <!-- window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f9a3d2f3bb","applicationID":"124493846","transactionName":"ewpdREVWCVkDRUpOV1pKQ1FQXBYaDlgIXA==","queueTime":0,"applicationTime":9,"agent":""} -->
+  <script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"f9a3d2f3bb",applicationID:"124493846"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="description" content="あなた好みのお花がポストに届く定期便アプリ">
+  <meta name="keywords" content="お花, 花, 定期便, お花の定期便, flower, フラワー, ふらわー, おはな, ていきびん, 無料, かわいい, 可愛い, カワイイ, 花瓶, 花器, ふらわーべーす, 丁寧な暮らし, おしゃれ, 女の子, おんなのこ, 植物">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="fb:app_id" content="2273546272929090">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flowr.is/">
+  <meta property="og:url" content="https://flowr.is/">
+  <title>FLOWER | かわいいが届くお花便</title>
+  <meta property="og:description" content="あなた好みのお花がポストに届く定期便アプリ">
+  <meta property="og:image" content="https://s3-ap-northeast-1.amazonaws.com/flower-production-assets/assets/web/common/ogimage-2e4ecaabd1e9adba59b2a924b35d28d0fa73186f18a5fd9133467749f661c3a1.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="csrf-param" content="authenticity_token">
+  <meta name="csrf-token" content="i7gKnae8QIITYk21WE4BtGHv3z6YfiqA4SpkFRfm5t/Sn4syYT2cZZHuqli3pIj4dGFkguNG8FahmyIwesF5fQ==">
+  <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+  <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP">
+  <link rel="stylesheet" media="screen" href="https://s3-ap-northeast-1.amazonaws.com/flower-production-assets/assets/web/home-be9cf549ad0db7c0c94bf756a6f914785d8ab81a9599b308f021ea70af657b30.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="image/logo_vertical.png">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--  TOP  -->
+<body class="papes_contoller home_action">
+  <section class="header">
+  <div class="logo"></div>
+  <div class="tagline">かわいいが届くお花便</div>
+  <div class="content">
+    <div class="download_pc">
+      <div class="container">
+        <a href="https://flowr.page.link/88Lt"><div class="badge_appstore"></div></a><a href="https://flowr.page.link/19mT"><div class="badge_googleplaystore"></div></a>
+      </div>
+    </div> 
+    <div class="footnote">
+      <p>* 北海道、沖縄、離島エリアは現在対象外です</p>
+    </div>
+  </div>
+  </section>
+
+  <!--  SERVICE  -->
+  <section class="service">
+    <div class="container white">
+      <div class="item item1">
+        <h2>
+          届くのは
+          <br>
+          あなた好みのお花だけ
+        </h2>
+        <p>
+          FOLWERのお花は季節やトレンドに合わせてプロがセレクトしたもの。雰囲気の異なる複数のお花から毎回好きなものが選べます。
+        </p>
+      </div>
+      <div class="item item2">
+        <h2>
+          お花はポストに投函
+          <br>
+          忙しくても大丈夫
+        </h2>
+        <p>
+          お花は専用BOXに入れてポストに直接お届け。不在で受け取れなくても安心して使えます。
+        </p>
+      </div>
+      <div class="item item3">
+        <h2>
+          FOLWERなら
+          <br>
+          いつもかわいく飾れる
+        </h2>
+        <p>
+          専用の花器を使うと、届いたお花をさっと生けるだけでかわいい空間のできあがり。お花のある暮らしがもっと楽しくなります。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--  PRICE  -->  
+  <section class="price">
+    <div class="container">
+      <div class="item price">
+        <div class="wrap">
+          <h2>
+            お部屋に飾りやすいサイズの
+            <br>
+            ブーケをワンコインで
+          </h2>
+          <div class="wrap">
+            <div class="content">
+              <div class="bouquet">
+                <div class="freetrial"></div>
+              </div>
+              <div class="bouquet_price">
+                <p>
+                  お花とグリーン５〜６本のブーケ
+                </p>
+                <p class="large">
+                  500円
+                  <span> / 1回</span>
+                </p>
+              </div>
+            </div>
+            <div class="footnote">
+              <p>* 送料は360円(税別)です。</p>
+              <p>* 価格は税別です。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item frequency">
+        <h2>
+          月に2回の注文で、
+          <br>
+          お花がいつもある丁度いいベース
+        </h2>
+        <div class="img"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--  FOLWER  -->
+  <section class="flower">
+    <div class="container">
+      <div class="item title">
+        <h2>どんなお花が届くの？</h2>
+      </div>
+      <div class="item img"></div>
+      <div class="item body">
+        <h3>かわいいお花だけ</h3>
+        <p>色やサイズなど、かわいくおしゃれに飾れるお花にこだわってセレクト。季節やトレンドに合わせてブーケを作っています。</p>
+        <h3>元気な状態で</h3>
+        <p>お花は注文を受けてから市場で直接仕入れているから新鮮。お花の元気を保つ専用BOXでお届けします。</p>
+        <h3>そのまま飾れる</h3>
+        <p>あらかじめ飾るのに最適な長さに茎をカットしてお届け。箱から出して、そのまま花器に入れるだけでOKです。</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--  VASE  -->
+  <section class="vase">
+    <div class="container">
+      <div class="item title">
+        <h2>
+          かんたん、かわいい
+          <br>
+          FLOWERのための花の器
+        </h2>
+        <div class="discount">
+          初回限定25%OFF 😳
+          </div>
+      </div>
+      <div class="item img"></div>
+      <div class="item body">
+        <p>お花を飾るのに欠かせないのが」花器。でも、お花との相性もさまざま。手持ちにぴったりのものがなくて、いまいちかわいく飾れない...なんてことも。そこでかんたんに、かわいくお花を飾れる専用の花器を作りました。お花のある暮らしが、もっと楽しみになりますように。</p>
+        <div class="vase_variation">
+          <div class="item bell">
+            <p>bell</p>
+          </div>
+          <div class="item moon">
+            <p>moon</p>
+          </div>
+          <div class="item candle">
+            <p>candle</p>
+          </div>
+        </div>
+        <div class="price">
+          <div class="title">
+            初回注文後
+            <br>
+            2週間以内
+          </div>
+          <div class="content">
+            <div class="discount_price">1,200円(送料無料)</div>
+            <div class="mormal_price">通常価格 1,600円(送料別)</div>
+          </div>
+        </div>
+        <div class="footnote">アプリ内でご購入いただけます。</div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!--  SERVICE2  -->
+  <section class="service2">
+    <h2>
+      FLOWERだから続けられる、
+      <br>
+      お花のある暮らし
+    </h2>
+    <div class="container">
+      <div class="item item01">
+        <h3>お世話がかんたん</h3>
+        <p>
+          お花の栄養剤をセットでお届け。
+          <br>
+          こまめな水換えは不要です。
+        </p>
+      </div>
+      <div class="item item02">
+        <h3>アプリがお知らせ</h3>
+        <p>
+          お花のお届けはアプリがお知らせ。
+          <br>
+          受け取り忘れの心配もありません。
+        </p>
+      </div>
+      <div class="item item03">
+        <h3>安心の保証つき</h3>
+        <p>
+          万が一枯れたお花が届いても、
+          <br>
+          新しいものを無料で再送します。
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--  DOWNLOAD2-->
+  <section class="download2">
+    <div class="container">
+      <div class="item logo">
+        <h3 class="navy mt16">かわいいが届くお花便</h3>
+      </div>
+      <div class="item img"></div>
+    </div>
+  </section>
+
+
+
+  <!--  FOOTER  -->
+  <section class="footer">
+    <a href="https://www.instagram.com/flowe_is"><div class="instagram"></div></a><div class="container">
+      <div class="item">
+        <div class="content"><a href="https://note.com/flowe_is">お知らせnote</a></div>
+      </div>
+      <div class="item">
+        <div class="content"><a href="https://flower.zendesk.com/hc/ja">FAQ</a></div>
+      </div>
+      <div class="item">
+        <div class="content"><a href="/policy">プライバシーポリシー</a></div>
+      </div>
+      <div class="item">
+        <div class="content"><a href="/terms">利用規約</a></div>
+      </div>
+      <div class="item">
+        <div class="content"><a href="commercial">特定商取引法に関する表記</a></div>
+      </div>
+      <div class="item">
+        <div class="content"><a href="https://rollcake.co">運営会社</a></div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright ROLLCAKE Inc. All Rights Reserved.</p>
+    </div>
+  </section>
+  <section class="downlode_sp">
+    <div class="container">
+      <a href="https://flowr.page.link/88Lt"><div class="badge_appstore"></div></a>
+      <a href="https://flowr.page.link/19mT"><div class="badge_googleplaystore"></div></a>
+    </div>
+  </section>
+  
+  
+  
+</body>
+</html>
